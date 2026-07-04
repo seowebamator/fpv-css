@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/*
+FPV CSS v1.0.0
+Fast Pure Versatile CSS-framework
+Copyright 2025 Webamator
+*/
+
+*, 
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  line-height: 1.8;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  color: var(--fpv-color-main);
+  word-wrap: break-word;
+  background: var(--fpv-bg-body);
+}
+
+body > header,
+body > main,
+body > aside,
+body > footer {
+  width: 100%;
+}
+
+body > aside {
+  padding: .75rem;
+}
+
+body > footer {
+  padding: .75rem;
+  color: var(--fpv-color-footer);
+  background: var(--fpv-bg-footer);
+}
+
+article {
+  padding: .75rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+h5 {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+hr {
+  margin: 0;
+  margin-bottom: 1.25rem;
+  border: none;
+  border-top: 1px solid var(--fpv-hr);
+}
+
+a {
+  color: var(--fpv-link);
+  text-decoration: none;
+  transition: color .5s ease;
+}
+
+a:hover {
+  color: var(--fpv-link-hover);
+  text-decoration: underline;
+}
+
+
+header > nav {
+  background: var(--fpv-bg-nav);
+}
+
+header > nav > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin-left: auto;
+  padding: 0;
+  width: 2rem;
+  height: 1.8rem;
+  background: var(--fpv-bg-nav);
+  border: none;
+  border-radius: 0;
+  border-top: 2px solid var(--fpv-link-header);
+  cursor: pointer;
+  transition: border-color .3s ease;
+}
+header > nav > button::before,
+header > nav > button::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: .34rem;
+  background: transparent;
+  transition: all .3s ease;
+}
+header > nav > button::before {
+  margin-top: .4rem;
+  border-top: 2px solid var(--fpv-link-header);
+}
+header > nav > button::after {
+  margin-top: .2rem;
+  border-bottom: 2px solid var(--fpv-link-header);
+}
+header > nav > button[aria-expanded="true"] {
+  border-color: transparent;
+}
+header > nav > button[aria-expanded="true"]::before {
+  height: .25rem;
+  transform: rotate(45deg) translate(3px, 3px);
+}
+header > nav > button[aria-expanded="true"]::after {
+  height: .25rem;
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+
+header > nav details {
+  position: relative;
+}
+header > nav details summary {
+  padding: .75rem 1rem;
+  cursor: pointer;
+  list-style: none;
+  color: var(--fpv-link-header);
+}
+header > nav details[open] > ul {
+  background: var(--fpv-bg-nav);
+}
+
+header > nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+header > nav a {
+  display: block;
+  padding: .75rem 1rem;
+  color: var(--fpv-link-header);
+  transition: background .5s ease;
+}
+
+
+header > nav a:hover,
+header > nav details > summary:hover {
+  color: var(--fpv-link-header-hover);
+  text-decoration: none;
+  background: var(--fpv-bg-footer);
+}
+
+header > nav ul li {
+  position: relative;
+  margin-top: 0;
+  line-height: 1.8;
+}
+
+header > nav ul ul {
+  min-width: 200px;
+}
+
+header > nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+details > summary::after {
+  content: ' ▾';
+}
+
+
+body > footer a {
+  color: var(--fpv-link-footer);
+}
+
+body > footer a:hover {
+  color: var(--fpv-link-footer-hover);
+}
+
+input[type=search] {
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 769px) {
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header > nav ul ul details > summary::after {
+    content: ' ▸';
+  }
+
+  header > nav > button {
+    display: none;
+  }
+
+  header > nav details[open] > ul {
+    display: block;
+    position: absolute;
+  }
+
+  body > main {
+    flex: 1;
+  }
+  
+  body > aside {
+    width: 25%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  header > nav ul {
+    flex-direction: column;
+  }
+  header > nav details[open] > summary::after {
+	content: ' ▴';
+  }
+
+  header > nav {
+    padding: .75rem 1rem;
+  }
+
+  header > nav ul ul {
+    padding-left: 1rem;
+  }
+
+  header > nav > ul {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .2s ease, opacity .1s ease;
+  }
+  header > nav button[aria-expanded="true"] + ul {
+    display: flex;
+    max-height: 100vh;
+    opacity: 1;
+    transition: max-height .2s ease, opacity .3s ease;
+  }
+
+
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*
+FPV CSS v1.0.0
+Fast Pure Versatile CSS-framework
+Copyright 2025 Webamator
+*/
+
+:root {
+	--fpv-bg-body: #fffcf9;
+	--fpv-bg-nav: #333728;
+	--fpv-bg-footer: #383d2a;
+	--fpv-bg-white: #ffffff;
+	--fpv-bg-thead: #ebe9df;
+	--fpv-bg-mark: #ff0;
+	--fpv-color-main: #252525;
+	--fpv-color-black: #000;
+	--fpv-color-blue: #0060df;
+	--fpv-color-footer: #ebe9df;
+	--fpv-color-form: #000;
+	--fpv-link: #015050;
+	--fpv-link-hover: #205107;
+	--fpv-link-header: #ebe9df;
+	--fpv-link-header-hover: #dfe3eb;
+	--fpv-link-footer: #ebe9df;
+	--fpv-link-footer-hover: #dfe3eb;
+	--fpv-button-hover: #faf8ef;
+	--fpv-border: #ebe9df;
+	--fpv-hr: #dbdbdb;
+}
