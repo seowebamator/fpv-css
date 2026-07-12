@@ -1,0 +1,26 @@
+{
+  "name": "fpv-css",
+  "version": "1.0.1",
+  "description": "Fast Pure Versatile — Mobile First, Classless, Semantic, Responsive and SLON-ready framework for those who value uncompromising speed.",
+  "main": "fpv-full.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seowebamator/fpv-css.git"
+  },
+  "keywords": [
+    "css",
+    "classless",
+    "framework",
+    "mobile-first",
+    "semantic"
+  ],
+  "author": "Webamator",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seowebamator/fpv-css/issues"
+  },
+  "homepage": "https://github.com/seowebamator/fpv-css#readme"
+}
