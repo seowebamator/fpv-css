@@ -8,6 +8,7 @@ Copyright 2025 Webamator
 :root {
 	--fpv-bg-body: #fffcf9;
 	--fpv-bg-nav: #333728;
+	--fpv-bg-nav-hover: #383d2a;
 	--fpv-bg-footer: #383d2a;
 	--fpv-bg-white: #ffffff;
 	--fpv-bg-thead: #ebe9df;
@@ -28,52 +29,52 @@ Copyright 2025 Webamator
 	--fpv-hr: #dbdbdb;
 }
 
-*, 
+*,
 *::before, *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  line-height: 1.8;
-  overflow-x: hidden;
-  font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  font-weight: 400;
-  color: var(--fpv-color-main);
-  word-wrap: break-word;
-  background: var(--fpv-bg-body);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	line-height: 1.8;
+	overflow-x: hidden;
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+	font-weight: 400;
+	color: var(--fpv-color-main);
+	word-wrap: break-word;
+	background: var(--fpv-bg-body);
 }
 
 body > header,
 body > main,
 body > aside,
 body > footer {
-  width: 100%;
+	width: 100%;
 }
 
 body > aside {
-  padding: .75rem;
+	padding: .75rem;
 }
 
 body > footer {
-  padding: .75rem;
-  color: var(--fpv-color-footer);
-  background: var(--fpv-bg-footer);
+	padding: .75rem;
+	color: var(--fpv-color-footer);
+	background: var(--fpv-bg-footer);
 }
 
 article {
-  padding: .75rem;
+	padding: .75rem;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 h1,
@@ -82,427 +83,427 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+	font-weight: 700;
 }
 
 h1 {
-  font-size: 2rem;
-  line-height: 1.7;
+	font-size: 2rem;
+	line-height: 1.7;
 }
 
 h2 {
-  font-size: 1.75rem;
-  line-height: 1.5;
+	font-size: 1.75rem;
+	line-height: 1.5;
 }
 
 h3 {
-  font-size: 1.5rem;
-  line-height: 1.5;
+	font-size: 1.5rem;
+	line-height: 1.5;
 }
 
 h4 {
-  font-size: 1.3rem;
-  line-height: 1.5;
+	font-size: 1.3rem;
+	line-height: 1.5;
 }
 
 h5 {
-  font-size: 1.1rem;
-  line-height: 1.5;
+	font-size: 1.1rem;
+	line-height: 1.5;
 }
 
 h6 {
-  font-size: .9rem;
-  line-height: 1.5;
+	font-size: .9rem;
+	line-height: 1.5;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
+	margin-top: 0;
+	margin-bottom: 1.25rem;
 }
 
 b,
 strong {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 hr {
-  margin: 0;
-  margin-bottom: 1.25rem;
-  border: none;
-  border-top: 1px solid var(--fpv-hr);
+	margin: 0;
+	margin-bottom: 1.25rem;
+	border: none;
+	border-top: 1px solid var(--fpv-hr);
 }
 
 a {
-  color: var(--fpv-link);
-  text-decoration: none;
-  transition: color .5s ease;
+	color: var(--fpv-link);
+	text-decoration: none;
+	transition: color .5s ease;
 }
 
 a:hover {
-  color: var(--fpv-link-hover);
-  text-decoration: underline;
+	color: var(--fpv-link-hover);
+	text-decoration: underline;
 }
 
 
 header > nav {
-  background: var(--fpv-bg-nav);
+	background: var(--fpv-bg-nav);
 }
 
 header > nav > button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  margin-left: auto;
-  padding: 0;
-  width: 2rem;
-  height: 1.8rem;
-  background-color: var(--fpv-bg-nav);
-  border: none;
-  border-radius: 0;
-  border-top: 2px solid var(--fpv-link-header);
-  cursor: pointer;
-  transition: border-color .3s ease;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	margin-left: auto;
+	padding: 0;
+	width: 2rem;
+	height: 1.8rem;
+	background-color: var(--fpv-bg-nav);
+	border: none;
+	border-radius: 0;
+	border-top: 2px solid var(--fpv-link-header);
+	cursor: pointer;
+	transition: border-color .3s ease;
 }
 header > nav > button:hover {
-  background-color: var(--fpv-bg-nav);
+	background-color: var(--fpv-bg-nav);
 }
 header > nav > button:focus {
-  outline: none;
+	outline: none;
 }
 header > nav > button::before,
 header > nav > button::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: .34rem;
-  background: transparent;
-  transition: all .3s ease;
+	content: '';
+	display: block;
+	width: 100%;
+	height: .34rem;
+	background: transparent;
+	transition: all .3s ease;
 }
 header > nav > button::before {
-  margin-top: .4rem;
-  border-top: 2px solid var(--fpv-link-header);
+	margin-top: .4rem;
+	border-top: 2px solid var(--fpv-link-header);
 }
 header > nav > button::after {
-  margin-top: .2rem;
-  border-bottom: 2px solid var(--fpv-link-header);
+	margin-top: .2rem;
+	border-bottom: 2px solid var(--fpv-link-header);
 }
 header > nav > button[aria-expanded="true"] {
-  border-color: transparent;
+	border-color: transparent;
 }
 header > nav > button[aria-expanded="true"]::before {
-  height: .25rem;
-  transform: rotate(45deg) translate(3px, 3px);
+	height: .25rem;
+	transform: rotate(45deg) translate(3px, 3px);
 }
 header > nav > button[aria-expanded="true"]::after {
-  height: .25rem;
-  transform: rotate(-45deg) translate(3px, -3px);
+	height: .25rem;
+	transform: rotate(-45deg) translate(3px, -3px);
 }
 
 
 header > nav details {
-  position: relative;
+	position: relative;
 }
 header > nav details summary {
-  padding: .75rem 1rem;
-  cursor: pointer;
-  list-style: none;
-  color: var(--fpv-link-header);
+	padding: .75rem 1rem;
+	cursor: pointer;
+	list-style: none;
+	color: var(--fpv-link-header);
 }
 header > nav details[open] > ul {
-  background: var(--fpv-bg-nav);
+	background: var(--fpv-bg-nav);
 }
 
 header > nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
 }
 
 header > nav a {
-  display: block;
-  padding: .75rem 1rem;
-  color: var(--fpv-link-header);
-  transition: background .5s ease;
+	display: block;
+	padding: .75rem 1rem;
+	color: var(--fpv-link-header);
+	transition: background .5s ease;
 }
 
 
 header > nav a:hover,
 header > nav details > summary:hover {
-  color: var(--fpv-link-header-hover);
-  text-decoration: none;
-  background: var(--fpv-bg-footer);
+	color: var(--fpv-link-header-hover);
+	text-decoration: none;
+	background: var(--fpv-bg-nav-hover);
 }
 
 header > nav ul li {
-  position: relative;
-  margin-top: 0;
-  line-height: 1.8;
+	position: relative;
+	margin-top: 0;
+	line-height: 1.8;
 }
 
 header > nav ul ul {
-  min-width: 200px;
+	min-width: 200px;
 }
 
 header > nav ul ul ul {
-  top: 0;
-  left: 100%;
+	top: 0;
+	left: 100%;
 }
 
 details > summary::after {
-  content: ' ▾';
+	content: ' ▾';
 }
 
 
 body > footer a {
-  color: var(--fpv-link-footer);
+	color: var(--fpv-link-footer);
 }
 
 body > footer a:hover {
-  color: var(--fpv-link-footer-hover);
+	color: var(--fpv-link-footer-hover);
 }
 
 body > footer a[aria-label="Back to top"] {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  padding: .3rem 1rem;
-  background: var(--fpv-bg-footer);
-  border: 1px solid var(--fpv-border);
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	padding: .3rem 1rem;
+	background: var(--fpv-bg-footer);
+	border: 1px solid var(--fpv-border);
 }
 
 input[type=search] {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 
-input, 
-select, 
-button, 
+input,
+select,
+button,
 textarea {
-  margin: 0;
-  padding: 0.7rem;
-  color: var(--fpv-color-form);
-  font-family: inherit;
-  font-size: inherit;
-  background-color: var(--fpv-bg-white);
-  border: 1px solid var(--fpv-border);
-  border-radius: .2rem;
-  outline: none
+	margin: 0;
+	padding: 0.7rem;
+	color: var(--fpv-color-form);
+	font-family: inherit;
+	font-size: inherit;
+	background-color: var(--fpv-bg-white);
+	border: 1px solid var(--fpv-border);
+	border-radius: .2rem;
+	outline: none
 }
 
 input:not([type='checkbox']):not([type='radio']):focus,
 button:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid var(--fpv-color-blue);
-  outline-offset: -2px;
+	outline: 2px solid var(--fpv-color-blue);
+	outline-offset: -2px;
 }
 
 button,
 input[type=button],
 input[type=submit],
 input[type=reset] {
-  cursor: pointer;
-  transition: background .5s ease;
+	cursor: pointer;
+	transition: background .5s ease;
 }
 button:hover,
 input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
-  background-color: var(--fpv-button-hover);
+	background-color: var(--fpv-button-hover);
 }
 
 select {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 textarea {
-  width: 100%;
+	width: 100%;
 }
 
 fieldset {
-  margin: 0;
-  padding: 0.7rem;
-  border: 1px solid var(--fpv-border);
+	margin: 0;
+	padding: 0.7rem;
+	border: 1px solid var(--fpv-border);
 }
 
 legend {
-  padding: 0 0.7rem;
+	padding: 0 0.7rem;
 }
 
 article > header {
-  padding-bottom: .75rem;
+	padding-bottom: .75rem;
 }
 
 article > footer {
-  border-top: 1px solid var(--fpv-hr);
-  font-size: .9rem;
+	border-top: 1px solid var(--fpv-hr);
+	font-size: .9rem;
 }
 
 ul, ol {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  padding-left: 2rem;
+	margin-top: 0;
+	margin-bottom: 1.25rem;
+	padding-left: 2rem;
 }
 
 li {
-  line-height: 1.4;
+	line-height: 1.4;
 }
 
 li + li {
-  margin-top: .4rem;
+	margin-top: .4rem;
 }
 
 table {
-  margin-bottom: 1.25rem;
-  width: 100%;
-  border-collapse: collapse;
+	margin-bottom: 1.25rem;
+	width: 100%;
+	border-collapse: collapse;
 }
 
 table caption {
-  padding-bottom: 1.25rem;
-  text-align: left;
-  font-style: italic;
+	padding-bottom: 1.25rem;
+	text-align: left;
+	font-style: italic;
 }
 
 thead {
-  background-color: var(--fpv-bg-thead);
+	background-color: var(--fpv-bg-thead);
 }
 
 th,
 td {
-  padding: .5em .75em;
-  text-align: left;
+	padding: .5em .75em;
+	text-align: left;
 }
 
-td, 
+td,
 th[scope="row"] {
-  border-bottom: 1px solid var(--fpv-border);
+	border-bottom: 1px solid var(--fpv-border);
 }
 
 tfoot th,
 tfoot td,
 tfoot th[scope="row"] {
-  border-top: 2px solid var(--fpv-border);
-  border-bottom: 2px solid var(--fpv-border);
+	border-top: 2px solid var(--fpv-border);
+	border-bottom: 2px solid var(--fpv-border);
 }
 
 blockquote {
-  margin: 0;
-  margin-bottom: 1.25rem;
-  padding-left: 2rem;
-  font-style: italic;
-  border-left: 4px solid var(--fpv-border);
+	margin: 0;
+	margin-bottom: 1.25rem;
+	padding-left: 2rem;
+	font-style: italic;
+	border-left: 4px solid var(--fpv-border);
 }
 
 q {
-  font-style: italic;
+	font-style: italic;
 }
 
 pre,
 code {
-  font-family: monospace;
+	font-family: monospace;
 }
 
 kbd {
-  padding: .1rem .4rem;
-  font-size: .9rem;
-  border: 1px solid var(--fpv-border);
-  border-radius: .2rem;
+	padding: .1rem .4rem;
+	font-size: .9rem;
+	border: 1px solid var(--fpv-border);
+	border-radius: .2rem;
 }
 
 small {
-  font-size: .85rem;
+	font-size: .85rem;
 }
 
 sub,
 sup {
-  position: relative;
-  font-size: 0.75em;
-  line-height: 0;
-  vertical-align: baseline;
+	position: relative;
+	font-size: 0.75em;
+	line-height: 0;
+	vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+	bottom: -0.25em;
 }
 
 sup {
-  top: -0.5em;
+	top: -0.5em;
 }
 
 mark {
-  padding: .125rem .25rem;
-  background-color: var(--fpv-bg-mark);
-  color: var(--fpv-color-black);
-  border-radius: .2rem;
-  vertical-align: baseline;
+	padding: .125rem .25rem;
+	background-color: var(--fpv-bg-mark);
+	color: var(--fpv-color-black);
+	border-radius: .2rem;
+	vertical-align: baseline;
 }
 
 
 @media (min-width: 769px) {
 
-  body {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	body {
+	display: flex;
+	flex-wrap: wrap;
+	}
 
-  header > nav ul ul details > summary::after {
-    content: ' ▸';
-  }
+	header > nav ul ul details > summary::after {
+	content: ' ▸';
+	}
 
-  header > nav > button {
-    display: none;
-  }
+	header > nav > button {
+	display: none;
+	}
 
-  header > nav details[open] > ul {
-    display: block;
-    position: absolute;
-  }
+	header > nav details[open] > ul {
+	display: block;
+	position: absolute;
+	}
 
-  body > main {
-    flex: 1;
-  }
-  
-  body > aside {
-    width: 25%;
-  }
+	body > main {
+	flex: 1;
+	}
+
+	body > aside {
+	width: 25%;
+	}
 
 }
 
 @media (max-width: 768px) {
-  header > nav ul {
-    flex-direction: column;
-  }
-  header > nav details[open] > summary::after {
+	header > nav ul {
+	flex-direction: column;
+	}
+	header > nav details[open] > summary::after {
 	content: ' ▴';
-  }
+	}
 
-  header > nav {
-    padding: .75rem 1rem;
-  }
+	header > nav {
+	padding: .75rem 1rem;
+	}
 
-  header > nav ul ul {
-    padding-left: 1rem;
-  }
+	header > nav ul ul {
+	padding-left: 1rem;
+	}
 
-  header > nav > ul {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height .2s ease, opacity .1s ease;
-  }
-  header > nav button[aria-expanded="true"] + ul {
-    display: flex;
-    max-height: 100vh;
-    opacity: 1;
-    transition: max-height .2s ease, opacity .3s ease;
-  }
+	header > nav > ul {
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: max-height .2s ease, opacity .1s ease;
+	}
+	header > nav button[aria-expanded="true"] + ul {
+	display: flex;
+	max-height: 100vh;
+	opacity: 1;
+	transition: max-height .2s ease, opacity .3s ease;
+	}
 
 
 }
