@@ -1,6 +1,6 @@
 {
   "name": "fpv-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fast Pure Versatile — Mobile First, Classless, Semantic, Responsive and SLON-ready framework for those who value uncompromising speed.",
   "main": "fpv-full.css",
   "scripts": {
