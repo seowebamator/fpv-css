@@ -17,7 +17,7 @@ https://fpv-css.webamator.net/
 You can add FPV-css to your page via the free jsDelivr CDN. Just add the following <link> element into your page's <head>, before your project's stylesheets.
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fpv-css@1.0.1/assets/css/fpv-full.min.css" integrity="sha384-y6PeEuXbirxLTogeVWOeKg2aR+y+9XptHyRQVzuzogkCsqHH2x2l6eRfnO9Yo83O" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fpv-css@1.0.2/assets/css/fpv-full.min.css">
 ```
 
 ---
@@ -27,7 +27,7 @@ You can add FPV-css to your page via the free jsDelivr CDN. Just add the followi
 For animation hamburger menu and desktop dropdown hover:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/fpv-css@1.0.1/assets/js/fpv.min.js" integrity="sha384-1t/rBl4s6BnHw7UJ5NpjVDqQyJwOjIVLALJ2hNz4+DxIgj/mtQIjPEUHorGO8VV6" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/fpv-css@1.0.2/assets/js/fpv.min.js"></script>
 ```
 
 ---
